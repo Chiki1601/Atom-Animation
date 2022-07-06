@@ -1,0 +1,38 @@
+body {
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1a1a54;
+}
+svg {
+  width: 30vw;
+  max-height: 80vh;
+  overflow: visible;
+}
+.eins {
+  transform-origin: 60px 60px;
+  transform: rotateZ(60deg);
+}
+.zwei {
+  transform-origin: 60px 60px;
+  transform: rotateZ(-60deg);
+}
+.all {
+  transform-origin: 60px 60px;
+  transform: scaleX(.32);
+}
+.group {
+  animation: turnIt 1.5s linear infinite;
+  transform-origin: 60px 60px;
+  transform-box: content-box;
+}
+.go {
+  // transform: translateY(4px);
+}
+@keyframes turnIt {
+  100% {
+    transform: rotate(1turn);
+  }
+}
